@@ -29,7 +29,7 @@ elif option == '2':
                 string=string+random.choice(v)
                 o=1
             elif o == 1:
-                if random.randint(0,2) == 2 and not len(string)-3 > length:
+                if random.randint(0,2) == 2 and not len(string)+2 > length:
                     string=string+random.choice(cs)
                 else:
                     string=string+random.choice(c)
