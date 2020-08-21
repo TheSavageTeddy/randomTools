@@ -8,6 +8,7 @@ import random
 length=input(
 '''
 range of length of string: 
+
 (5 7 for 5 to 7)
 ''')
 length=length.split()
