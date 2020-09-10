@@ -15,6 +15,7 @@ length=length.split()
 option=input('''
 (1) completely random
 (2) readable/sayable words
+(3) readable/sayable words (better distribution of consanents)
 ''')
 
 amount=int(input("amount to generate: "))
@@ -51,6 +52,22 @@ elif option == '2':
                 o=0
 
         print(string)
+elif option == '3':
+    for i in range(0, amount):
+        string=""
+        
+        rand= random.randint(int(length[0]),int(length[1]))
+        o=random.randint(0,1)
+        while len(string)<rand:
             
+            if o == 0:
+                string=string+random.choice(v)
+                o = 1
+            elif o == 1:
+                string=string+random.choice(consenentCommon)
+                o = 0
+        print(string)
+
+        
         
     
